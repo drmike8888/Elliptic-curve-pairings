@@ -1,0 +1,126 @@
+Found irreducible polynomial:
+Mod(1, 43)*x^2 + Mod(1, 43)*x^1 + Mod(3, 43) 
+
+cardinality of extension: 1815
+k=1815
+G1 x G1 test--------------------
+0 7
+1 23
+2 49
+3 87
+P:
+x: Mod(3, 43) 
+
+y: Mod(40, 43) 
+
+Q:
+x: Mod(11, 43) 
+
+y: Mod(11, 43) 
+
+T:
+x: Mod(24, 43) 
+
+y: Mod(23, 43) 
+
+S:
+x: Mod(1, 43)*x^1 + Mod(0, 43) 
+
+y: Mod(22, 43)*x^1 + Mod(32, 43) 
+
+G1 x G1 weil (P, Q): Mod(1, 43) 
+
+G1 x G1 weil (P, T): Mod(1, 43) 
+
+T + Q: 
+x: Mod(3, 43) 
+
+y: Mod(3, 43) 
+
+G1 x G1 weil (P, T+Q): Mod(1, 43) 
+
+G1 x G1 (P, T)*(P, Q): Mod(1, 43) 
+
+--------------------------------------------
+
+ G1 x G2 test-----------------------------
+0 7
+1 93
+2 165
+3 87
+P:
+x: Mod(3, 43) 
+
+y: Mod(40, 43) 
+
+Q:
+x: Mod(1, 43)*x^1 + Mod(4, 43) 
+
+y: Mod(15, 43)*x^1 + Mod(18, 43) 
+
+T:
+x: Mod(3, 43)*x^1 + Mod(1, 43) 
+
+y: Mod(41, 43)*x^1 + Mod(32, 43) 
+
+S:
+x: Mod(1, 43)*x^1 + Mod(0, 43) 
+
+y: Mod(22, 43)*x^1 + Mod(32, 43) 
+
+G1 x G2 weil (P, Q): Mod(36, 43)*x^1 + Mod(25, 43) 
+
+G1 x G2 weil (P, T): Mod(11, 43)*x^1 + Mod(2, 43) 
+
+T + Q: 
+x: Mod(24, 43)*x^1 + Mod(36, 43) 
+
+y: Mod(6, 43)*x^1 + Mod(36, 43) 
+
+G1 x G2 weil (P, T+Q): Mod(37, 43)*x^1 + Mod(23, 43) 
+
+G1 x G2 weil (P, T)*(P, Q): Mod(37, 43)*x^1 + Mod(23, 43) 
+
+-----------------------------------------------
+
+G2 x G2 test ------------------------
+0 93
+0 127
+1 165
+2 181
+3 87
+P:
+x: Mod(1, 43)*x^1 + Mod(39, 43) 
+
+y: Mod(39, 43)*x^1 + Mod(4, 43) 
+
+Q:
+x: Mod(3, 43)*x^1 + Mod(1, 43) 
+
+y: Mod(2, 43)*x^1 + Mod(11, 43) 
+
+T:
+x: Mod(3, 43)*x^1 + Mod(16, 43) 
+
+y: Mod(41, 43)*x^1 + Mod(11, 43) 
+
+S:
+x: Mod(1, 43)*x^1 + Mod(0, 43) 
+
+y: Mod(22, 43)*x^1 + Mod(32, 43) 
+
+G2 x G2 weil (P, Q): Mod(34, 43)*x^1 + Mod(19, 43) 
+
+G2 x G2 weil (P, T): Mod(11, 43)*x^1 + Mod(2, 43) 
+
+T + Q: 
+x: Mod(1, 43)*x^1 + Mod(4, 43) 
+
+y: Mod(28, 43)*x^1 + Mod(25, 43) 
+
+G2 x G2 weil (P, T+Q): Mod(32, 43)*x^1 + Mod(34, 43) 
+
+G2 x G2 weil (P, T)*(P, Q): Mod(32, 43)*x^1 + Mod(34, 43) 
+
+
+
