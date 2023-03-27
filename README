@@ -65,6 +65,4 @@ I could do is set ridiculous limit and say "it's way out there somewhere!"
 
 poly_exp_test.c - Test poly_pow() subroutine. Had trouble getting it right.
 
-tiny_pwr_chk.c - Find number of 11th roots of unity in GF(43^2). 11 :-)
-
 There are several other programs that were quick and dirty test routines.
