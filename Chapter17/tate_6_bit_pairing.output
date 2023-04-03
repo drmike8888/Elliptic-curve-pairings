@@ -1,0 +1,146 @@
+Found irreducible polynomial:
+Mod(1, 43)*x^2 + Mod(1, 43)*x^1 + Mod(3, 43) 
+
+order 3 has 2 points
+order 5 has 4 points
+order 11 has 120 points
+order 15 has 8 points
+order 33 has 240 points
+order 55 has 480 points
+order 165 has 960 points
+S:
+x: Mod(0, 43) 
+
+y: Mod(4, 43)*x^1 + Mod(2, 43) 
+
+P:
+x: Mod(3, 43) 
+
+y: Mod(3, 43) 
+
+===========================================
+Tate G1 x G1
+
+Q:
+x: Mod(11, 43) 
+
+y: Mod(11, 43) 
+
+tate(P, Q): Mod(1, 43) 
+
+T:
+x: Mod(24, 43) 
+
+y: Mod(20, 43) 
+
+tate(P, T): Mod(1, 43) 
+
+(P,Q)*(P,T): Mod(1, 43) 
+
+(P, T+Q): Mod(1, 43) 
+
+===========================================
+Tate G1 x G2* (order 11)
+
+Q:
+x: Mod(1, 43)*x^1 + Mod(4, 43) 
+
+y: Mod(15, 43)*x^1 + Mod(18, 43) 
+
+tate(P, Q): Mod(11, 43)*x^1 + Mod(2, 43) 
+
+T:
+x: Mod(3, 43)*x^1 + Mod(1, 43) 
+
+y: Mod(2, 43)*x^1 + Mod(11, 43) 
+
+tate(P, T): Mod(31, 43)*x^1 + Mod(5, 43) 
+
+(P,Q)*(P,T): Mod(34, 43)*x^1 + Mod(19, 43) 
+
+(P, T+Q): Mod(34, 43)*x^1 + Mod(19, 43) 
+
+===========================================
+Tate G1 x G2* (order 15)
+
+Q:
+x: Mod(13, 43)*x^1 + Mod(36, 43) 
+
+y: Mod(11, 43)*x^1 + Mod(5, 43) 
+
+tate(P, Q): Mod(1, 43) 
+
+T:
+x: Mod(30, 43)*x^1 + Mod(23, 43) 
+
+y: Mod(11, 43)*x^1 + Mod(6, 43) 
+
+tate(P, T): Mod(1, 43) 
+
+(P,Q)*(P,T): Mod(1, 43) 
+
+(P, T+Q): Mod(1, 43) 
+
+===========================================
+Tate G1 x G2* (order 33)
+
+Q:
+x: Mod(4, 43) 
+
+y: Mod(10, 43)*x^1 + Mod(5, 43) 
+
+tate(P, Q): Mod(37, 43)*x^1 + Mod(23, 43) 
+
+T:
+x: Mod(1, 43)*x^1 + Mod(7, 43) 
+
+y: Mod(9, 43)*x^1 + Mod(27, 43) 
+
+tate(P, T): Mod(1, 43) 
+
+(P,Q)*(P,T): Mod(37, 43)*x^1 + Mod(23, 43) 
+
+(P, T+Q): Mod(37, 43)*x^1 + Mod(23, 43) 
+
+===========================================
+Tate G1 x G2* (order 55)
+
+Q:
+x: Mod(1, 43)*x^1 + Mod(0, 43) 
+
+y: Mod(21, 43)*x^1 + Mod(11, 43) 
+
+tate(P, Q): Mod(36, 43)*x^1 + Mod(25, 43) 
+
+T:
+x: Mod(1, 43)*x^1 + Mod(17, 43) 
+
+y: Mod(9, 43)*x^1 + Mod(8, 43) 
+
+tate(P, T): Mod(37, 43)*x^1 + Mod(23, 43) 
+
+(P,Q)*(P,T): Mod(34, 43)*x^1 + Mod(19, 43) 
+
+(P, T+Q): Mod(34, 43)*x^1 + Mod(19, 43) 
+
+===========================================
+Tate G1 x G2* (order 165)
+
+Q:
+x: Mod(10, 43)*x^1 + Mod(32, 43) 
+
+y: Mod(7, 43) 
+
+tate(P, Q): Mod(7, 43)*x^1 + Mod(32, 43) 
+
+T:
+x: Mod(10, 43)*x^1 + Mod(36, 43) 
+
+y: Mod(12, 43)*x^1 + Mod(38, 43) 
+
+tate(P, T): Mod(32, 43)*x^1 + Mod(34, 43) 
+
+(P,Q)*(P,T): Mod(6, 43)*x^1 + Mod(29, 43) 
+
+(P, T+Q): Mod(6, 43)*x^1 + Mod(29, 43) 
+
