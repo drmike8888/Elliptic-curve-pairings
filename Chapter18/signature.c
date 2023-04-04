@@ -175,9 +175,7 @@ void get_system(char *filename, SIG_SYSTEM *sig)
   mpz_inp_raw(sig->cardE, sys);
   mpz_inp_raw(sig->tor, sys);
   mpz_inp_raw(sig->cobse, sys);
-  mpz_inp_raw(sig->G1.x, sys);
-  mpz_inp_raw(sig->G1.y, sys);
-
+  point_read(&sig->G1, sys);
   poly_read(&sig->irrd, sys);
   mpz_inp_raw(sig->cardEx, sys);
   mpz_inp_raw(sig->coxtd, sys);
