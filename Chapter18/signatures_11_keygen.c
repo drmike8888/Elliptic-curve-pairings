@@ -105,8 +105,7 @@ int main(int argc, char *argv[])
   mpz_out_raw(key, cardE);
   mpz_out_raw(key, tor);
   mpz_out_raw(key, cobse);
-  mpz_out_raw(key, G1.x);
-  mpz_out_raw(key, G1.y);
+  point_write(&G1, key);
   poly_write(&irrd, key);
   mpz_out_raw(key, cardEx);
   mpz_out_raw(key, coxtd);
