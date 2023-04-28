@@ -93,3 +93,46 @@ snark_verify: snark_verify.c snarkbase.o modulo.o eliptic.o poly.o poly_eliptic.
 
 signatures_2_keygen: signatures_2_keygen.c modulo.o eliptic.o poly.o poly_eliptic.o pairing.o signature.o
 	gcc -o signatures_2_keygen signatures_2_keygen.c  modulo.o eliptic.o poly.o poly_eliptic.o pairing.o signature.o -lgmp -lk12
+
+The make file is exceptionally crude. The programs which you can run are:
+
+test_mod
+test_irrd
+pairing_gen
+pairing_sweep
+pairing_phi6
+pairing_sweep_alpha
+get_curve
+eliptic_test
+weil_6_bit_pairing
+tate_6_bit_pairing
+quotient_group
+signatures_11
+signatures_11_keygen
+base_curves_embed
+base_test
+base_curve_gen
+poly_exp_test
+tiny_pwer_chk
+snark_test
+snark_qap
+snark_crs
+snark_proof
+snark_verify
+signatures_2_keygen
+
+These are mostly in date of creation order, so test_mod is the first
+program that actually does anything using the subroutines in the first
+few chapters. Not all these are mentioned in the text - I don't think
+test_irrd is discussed anywhere. I don't know much about make - so
+just execute each one and test:
+
+make test_mod
+./test_mod
+make pairing_sweep_alpha
+./pairing_sweep_alpha
+(this one will demand a maximum range)
+
+If the .o files are not available, make will compile them. All the .c
+and .o files must be in the same directory or it won't work. 
+
