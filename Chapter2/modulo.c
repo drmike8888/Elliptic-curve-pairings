@@ -218,7 +218,7 @@ int msqrt(mpz_t x, mpz_t a)
   while(i >= 0)
   {
     mrand(n);
-    i = mpz_legendre(n, modulus);
+    i = msqr(n);
   }
  
 
