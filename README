@@ -1,3 +1,9 @@
+This code is described in the book Elliptic Curve Cryptography for Developers.
+Before 2023 September 13 you can get it for 45% off with the code mlrosing2.
+The URL for the book page is: http://mng.bz/NVev
+The book won't be in print before 2024 January, so you can help improve the 
+text by making comments of what you think will make it better on the forum.
+
 I tried to split up the files by function. Modular arithmetic,
 elliptic curves, and protocols. Then polynomial arithmetic, polynomial
 elliptic curves and polynomial protocols. Plus lots of testing code.
