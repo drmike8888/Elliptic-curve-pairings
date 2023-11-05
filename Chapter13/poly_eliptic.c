@@ -51,12 +51,8 @@ void poly_point_copy(POLY_POINT *R, POLY_POINT P)
 {
   int i;
 
-  R->x.deg = P.x.deg;
-  for(i=0; i<=P.x.deg; i++)
-    mpz_set(R->x.coef[i], P.x.coef[i]);
-  R->y.deg = P.y.deg;
-  for(i=0; i<=P.y.deg; i++)
-    mpz_set(R->y.coef[i], P.y.coef[i]);
+  poly_copy(&R->x, P.x);
+  poly_copy(&R->y, P.y);
 }
 
 /*  test if point is at infinity.  Since all our curves
@@ -81,7 +77,8 @@ int poly_test_point(POLY_POINT P)
 void poly_point_printf(char *str, POLY_POINT P)
 {
   printf("%s", str);
-  poly_printf("x: ", P.x);
+  printf("x: ");
+  poly_print(P.x);
   poly_printf("y: ", P.y);
 }
 
