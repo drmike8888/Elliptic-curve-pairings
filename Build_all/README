@@ -1,0 +1,70 @@
+I tried to split up the files by function. Modular arithmetic,
+elliptic curves, and protocols. Then polynomial arithmetic, polynomial
+elliptic curves and polynomial protocols. Plus lots of testing code.
+
+modulo.c - This contains routines that compute GF(p)
+arithmetic. Fundamental to everything.
+
+eliptic.c - Contains routines to compute elliptic curve math on GF(p).
+
+eliptic_test.c - Check routines in eliptic.c actually function.
+
+base_protocols.c - Elliptic curve key exchange and digital signature
+algorithms on GF(p).
+
+poly.c - Basic math routines for GF(p^k). Polynomial math.
+
+test_mod.c - Test modulo subroutines with a few specific numbers. For
+debugging.
+
+poly_eliptic.c - Same as eliptic.c but uses GF(p^k) math.
+
+test_irrd.c - Test polynomial subroutines with specific
+polynomials. For debugging.
+
+base_curve_gen.c - Creates file for specific security level - 4
+choices. The field prime is fixed as are curves. For demonstration
+of how code works.
+
+base_test.c - Inputs files created by base_curve_gen and tests routines
+in base_protocols.c.
+
+Hilbert_Polynomials.list - Created from PARI/gp program. List of
+Hilbert Class Polynomials for finding j-invariant of elliptic curves.
+
+pairing_gen.c - First attempt at creating low embedding degree curves.
+
+pairing_sweep.c - Second attempt.
+
+pairing_phi6.c - Failed understanding of how low embedding degree works.
+
+pairing_sweep_alpha.c - Functioning low embedding degree search program.
+
+get_curve.c - Takes output from pairing_sweep_alpha and
+Hilbert_Polynomials.list to find coefficients of elliptic curve over GF(p).
+
+pairing.c - Subroutines to compute pairing operations on GF(p^k) curves.
+
+weil_6_bit_pairing.c - Example using GF(43^2) elliptic curves so every point
+can be printed out. Uses Weil pairing subroutines.
+
+tate_6_bit_pairing.c - same thing but uses Tate pairing subroutines.
+
+quotient_group.c - Used this to understand E/mE notation in math books.
+
+signature.c - Subroutines to compute multisignature aggregation using
+pairing mathematics.
+
+signatures_11_keygen.c - Create example parameters for pairing algorithms.
+
+signatures_11.c - Explicit example of pairing signature algorithm over
+GF(p^11).
+
+base_curves_embed.c - Attempt to find embedding degree of random curves. Best
+I could do is set ridiculous limit and say "it's way out there somewhere!"
+
+poly_exp_test.c - Test poly_pow() subroutine. Had trouble getting it right.
+
+tiny_pwr_chk.c - Find number of 11th roots of unity in GF(43^2). 11 :-)
+
+There are several other programs that were quick and dirty test routines.
