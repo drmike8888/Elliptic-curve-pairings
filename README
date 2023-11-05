@@ -8,6 +8,12 @@ I tried to split up the files by function. Modular arithmetic,
 elliptic curves, and protocols. Then polynomial arithmetic, polynomial
 elliptic curves and polynomial protocols. Plus lots of testing code.
 
+To actually build all these files to test them, drop into the Build_all 
+directory and use the Makefile there. Each of the chapters is separated out
+at the top level of the repo to identify where the code comes from. But all
+the example code depends on many previous chapters of object files to link
+with. So it is easier to actually just build it all from one place.
+
 modulo.c - This contains routines that compute GF(p)
 arithmetic. Fundamental to everything.
 
