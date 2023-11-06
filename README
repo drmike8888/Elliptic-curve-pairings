@@ -120,3 +120,6 @@ make pairing_sweep_alpha
 
 If the .o files are not available, make will compile them. All the .c
 and .o files must be in the same directory or it won't work. 
+
+NOTE: run signatures_11_keygen before running signatures_11 to avoid
+getting an error "can't find file".
