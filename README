@@ -129,5 +129,5 @@ have already created the file curve_11_parameters.bin to create the elliptic
 curve parameters used in this example. snark_qap creates the file snark.qap
 which is used with program snark_crs. snark_crs creates file snark.crs. Both
 snark.qap and snark.crs are used by snark_proof to create file snark_record.0.
-Program snark_verify reads in all 3 files snark.qap, snark.crs and snark_record.0
+Program snark_verify reads in files snark.crs and snark_record.0
 to determine if the zero knowledge proof verifies.
