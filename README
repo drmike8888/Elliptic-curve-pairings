@@ -99,7 +99,6 @@ base_test
 base_curve_gen
 poly_exp_test
 tiny_pwer_chk
-snark_test
 snark_qap
 snark_crs
 snark_proof
@@ -123,3 +122,12 @@ and .o files must be in the same directory or it won't work.
 
 NOTE: run signatures_11_keygen before running signatures_11 to avoid
 getting an error "can't find file".
+
+The snark_* programs should be run in the order snark_qap, snark_crs, 
+snark_proof, and snark_verify. In addition, signatures_11_keygen should
+have already created the file curve_11_parameters.bin to create the elliptic 
+curve parameters used in this example. snark_qap creates the file snark.qap
+which is used with program snark_crs. snark_crs creates file snark.crs. Both
+snark.qap and snark.crs are used by snark_proof to create file snark_record.0.
+Program snark_verify reads in all 3 files snark.qap, snark.crs and snark_record.0
+to determine if the zero knowledge proof verifies.
