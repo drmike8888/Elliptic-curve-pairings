@@ -76,9 +76,6 @@ tiny_pwer_chk:	tiny_pwer_chk.c modulo.o eliptic.o poly.o poly_eliptic.o pairing.
 snarkbase.o: snarkbase.c modulo.h snarkbase.h
 	gcc -c -o snarkbase.o snarkbase.c
 
-snark_test: snark_test.c snarkbase.o modulo.o eliptic.o poly.o poly_eliptic.o pairing.o signature.o
-	gcc -o snark_test snark_test.c snarkbase.o modulo.o eliptic.o poly.o poly_eliptic.o pairing.o signature.o -lgmp -lk12
-
 snark_qap: snark_qap.c snarkbase.o modulo.o eliptic.o poly.o poly_eliptic.o pairing.o signature.o
 	gcc -o snark_qap snark_qap.c snarkbase.o modulo.o eliptic.o poly.o poly_eliptic.o pairing.o signature.o -lgmp -lk12
 
