@@ -48,7 +48,10 @@ int main(int argc, char *argv[])
   list = (mpz_t*)malloc(sizeof(mpz_t)*n);
   fread(&l, sizeof(int), 1, qap);
   for(i=0; i<n; i++)
+  {
+    mpz_init(list[i]);
     mpz_inp_raw(list[i], qap);
+  }
   k = n*m;
   vj = (mpz_t*)malloc(sizeof(mpz_t)*k);
   wj = (mpz_t*)malloc(sizeof(mpz_t)*k);
