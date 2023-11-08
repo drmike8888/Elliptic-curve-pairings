@@ -34,6 +34,7 @@ int main(int argc, char *argv[])
 
 /*  read in QAP parameters */
 
+  printf("read in QAP parameters\n");
   qap = fopen("snark.qap", "r");
   if(!qap)
   {
@@ -127,6 +128,7 @@ int main(int argc, char *argv[])
 
   /*  create all powers of z for each aj coefficient */
 
+  printf("compute powers of z\n");
   zpow = (mpz_t*)malloc(sizeof(mpz_t)*n);
   for(i=0; i<n; i++)
     mpz_init(zpow[i]);
@@ -136,6 +138,7 @@ int main(int argc, char *argv[])
 
 /* create beta*vj + alpha*wj + yj for each aj coefficient */
 
+  printf("compute theta terms\n");
   theta = (mpz_t*)malloc(sizeof(mpz_t)*m);
   for(i=0; i<m; i++)
     mpz_init(theta[i]);
@@ -167,6 +170,7 @@ int main(int argc, char *argv[])
 /* create CRS points on G1 
    start by initializing field prime and extension field.  */
 
+  printf("create CRS points on G1\n");
   mset(sig.prime);
   poly_irrd_set(sig.irrd);
   poly_mulprep(sig.irrd);
@@ -201,6 +205,7 @@ int main(int argc, char *argv[])
 
 /* create CRS points on G2 */
 
+  printf("create CRS points on G2\n");
   poly_point_init(&bH);
   poly_elptic_mul(&bH, sig.G2, beta, sig.Ex);
   poly_point_init(&gH);
@@ -215,6 +220,7 @@ int main(int argc, char *argv[])
 
 /* now that CRS computed, write all data to disk */
 
+  printf("\nwriting crs file\n");
   crs = fopen("snark.crs", "w");
   fwrite(&n, sizeof(int), 1, crs);
   fwrite(&m, sizeof(int), 1, crs);

@@ -141,6 +141,7 @@ int main(int argc, char *argv[])
 
 /*  read in QAP parameters */
 
+  printf("open snark.qap file\n");
   qap = fopen("snark.qap", "r");
   if(!qap)
   {
@@ -154,8 +155,11 @@ int main(int argc, char *argv[])
   list = (mpz_t*)malloc(sizeof(mpz_t)*n);
   fread(&l, sizeof(int), 1, qap);
   for(i=0; i<n; i++)
+  {
+    mpz_init(list[i]);
     mpz_inp_raw(list[i], qap);
-
+  }
+  
 /*  read in left, right and output coefficient 
     matricies for each wire */
 
@@ -354,6 +358,7 @@ int main(int argc, char *argv[])
   elptic_mul(&Tmp, dG, r, sig.E);
   elptic_sum(&A, A, Tmp, sig.E);
   point_printf("A: ", A);
+  printf("\n");
   
 /* compute point B */
 
@@ -399,6 +404,7 @@ int main(int argc, char *argv[])
 
 /*  write out proof for this record */
 
+  printf("write out record 0\n");
   qap = fopen("snark_record.0", "w");
   fwrite(&n, sizeof(int), 1, qap);
   fwrite(&m, sizeof(int), 1, qap);
@@ -409,7 +415,7 @@ int main(int argc, char *argv[])
   point_write(&C, qap);
   poly_point_write(&B, qap);
   fclose(qap);
-  
+
   for(i=0; i<n; i++)
     mpz_clear(list[i]);
   for(i=0; i<m; i++)

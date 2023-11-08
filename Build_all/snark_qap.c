@@ -41,6 +41,7 @@ int main(int argc, char *argv[])
 /*  create left, right and output coefficient 
     matricies for each wire */
 
+  printf("compute left, right and outpub coefficients\n");
   vj = (mpz_t*)malloc(sizeof(mpz_t)*10*5);
   wj = (mpz_t*)malloc(sizeof(mpz_t)*10*5);
   yj = (mpz_t*)malloc(sizeof(mpz_t)*10*5);
@@ -71,7 +72,8 @@ int main(int argc, char *argv[])
   liofx(&yj[45], 4, list, 5);           // y9 = l4
 
 /* build up h(x) table  */
-  
+
+  printf("compute h(x) table\n");
   htable = all_lilj(list, 5);
 
 /* permutation of indexing to allow statement indexes
