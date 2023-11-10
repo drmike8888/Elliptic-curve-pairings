@@ -138,6 +138,7 @@ int main(int argc, char *argv[])
   poly_point_init(&R);
   poly_point_rand(&R, sig.Ex);
   poly_init(&eab);
+  poly_point_init(&P);
   tog2(&P, aG);
   tate(&eab, P, bH, R, sig.tor, sig.Ex);
   poly_printf("e(a*G, b*H): ", eab);
