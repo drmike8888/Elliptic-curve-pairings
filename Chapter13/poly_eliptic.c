@@ -132,7 +132,7 @@ void FF_bump(POLY *x)
   {
     madd(x->coef[i], x->coef[i], one);
     if(mpz_cmp_ui(x->coef[i], 0))
-      return;
+      break;
     i++;
     if((i > x->deg) && (x->deg < ird.deg))
       x->deg++;
