@@ -185,7 +185,7 @@ int msqrt(mpz_t x, mpz_t a)
   mpz_t n, q, y, b, t, t1;
   long e, i, r, cmp, m;
 
-  if(!msqr(a))  // no point if not a quadratic residue
+  if(msqr(a) <= 0)  // no point if not a quadratic residue
     return 0;
   
 /* is modulus ~ 3 mod 4?  */
